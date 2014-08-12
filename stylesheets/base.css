@@ -81,6 +81,8 @@
 	em { font-style: italic; }
 	strong { font-weight: bold; color: #333; }
 	small { font-size: 80%; }
+  
+  h7 { font-family: "Georgia", "Times New Roman", serif; font-size: 17px; line-height: 24px; color: green; margin-bottom: 4px;}
 
 /*	Blockquotes  */
 	blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; }
@@ -104,7 +106,7 @@
 	ul, ol { margin-bottom: 20px; }
 	ul { list-style: none outside; }
 	ol { list-style: decimal; }
-	ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+	ol, ul.square, ul.circle, ul.disc { margin-left: 16px; }
 	ul.square { list-style: square outside; }
 	ul.circle { list-style: circle outside; }
 	ul.disc { list-style: disc outside; }
