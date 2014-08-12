@@ -46,8 +46,10 @@
 	table {
 		border-collapse: collapse;
 		border-spacing: 0; }
-
-
+	
+	footer { text-align: center;
+		 color: #bbb; }
+	
 /* #Basic Styles
 ================================================== */
 	body {
@@ -69,7 +71,7 @@
 	h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px;}
 	h2 { font-size: 35px; line-height: 40px; margin-bottom: 10px; }
 	h3 { font-size: 28px; line-height: 34px; margin-bottom: 8px; }
-	h4 { font-size: 21px; line-height: 30px; margin-bottom: 4px; }
+	h4 { font-size: 21px; line-height: 30px; margin-bottom: 4px; color: green; }
 	h5 { font-size: 17px; line-height: 24px; }
 	h6 { font-size: 14px; line-height: 21px; }
 	.subheader { color: #777; }
@@ -86,7 +88,7 @@
 
 /*	Blockquotes  */
 	blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; }
-	blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
+	blockquote { margin: 0 0 20px; padding: 9px 20px 9px 19px; border-left: 1px solid green; background: #f3f3f3; }
 	blockquote cite { display: block; font-size: 12px; color: #555; }
 	blockquote cite:before { content: "\2014 \0020"; }
 	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
@@ -96,7 +98,7 @@
 
 /* #Links
 ================================================== */
-	a, a:visited { color: #333; text-decoration: underline; outline: 0; }
+	a, a:visited { color: green; text-decoration: none; outline: 0; }
 	a:hover, a:focus { color: #000; }
 	p a, p a:visited { line-height: inherit; }
 
