@@ -50,6 +50,18 @@
 	footer { text-align: center;
 		 color: #bbb; }
 	
+	pre { display: block;
+		   padding: 5px;
+		   margin: 5px;
+		   line-height: 1.428571429;
+		   word-break: break-all;
+		   word-wrap: break-word;
+		   white-space: pre-wrap;
+		   background-color: #f3f3f3;
+		   border: 1px solid #ccc;
+		   border-radius: 5px; 
+		   font-family: Monaco,Menlo,Consolas,"Courier New",monospace; }
+		   
 /* #Basic Styles
 ================================================== */
 	body {
