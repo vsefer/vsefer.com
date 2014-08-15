@@ -45,7 +45,7 @@
 
 	<div class="container">
 		<div class="sixteen columns">
-			<h1 class="remove-bottom" style="margin-top: 40px">vsefer@root: # <span class="blink">_</span></h1>
+		<h1 class="remove-bottom" style="margin-top: 40px"><a href="http://fabrikator.org" style="color: black; ">vsefer@root: # <span class="blink">_</span></a></h1>
 			<h7>personal blog about linux, servers, system administration, wireless, electronics ...</h7>
 			<hr />
 		</div>
@@ -69,6 +69,8 @@ Soon :)<br />
 
 <!-- End Document
 ================================================== -->
+<a href="#" class="scrollToTop">Top</a>
+<a href="http://fabrikator.org" class="goToHome">Home</a>
 </body>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="js/jquery-blink.js" language="javascript" type="text/javascript"></script>
@@ -77,6 +79,42 @@ Soon :)<br />
 $(document).ready(function()
 {
 	$('.blink').blink();
+});
+</script>
+
+<script type="text/javascript" language="javascript">
+$(document).ready(function(){
+	
+	//Check to see if the window is top if not then display button
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.scrollToTop').fadeIn();
+		} else {
+			$('.scrollToTop').fadeOut();
+		}
+	});
+	
+	//Click event to scroll to top
+	$('.scrollToTop').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
+	
+});
+</script>
+
+<script type="text/javascript" language="javascript">
+$(document).ready(function(){
+	
+	//Check to see if the window is top if not then display button
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.goToHome').fadeIn();
+		} else {
+			$('.goToHome').fadeOut();
+		}
+	});
+	
 });
 </script>
 
