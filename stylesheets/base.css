@@ -303,3 +303,17 @@
 }
 
 
+/* #Social icons
+================================================== */
+
+.iconskype {
+ margin-bottom: 0px;
+ width: 32px;
+ height:32px;
+ display:block;
+ background:transparent url('images/social/mono/skype.png') center top no-repeat;
+}
+
+.iconskype:hover {
+   background-image: url('images/social/color/skype.png');
+}

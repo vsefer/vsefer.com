@@ -1,145 +1,73 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
-<head>
+inherit file="base.html"/>
+<%block name="metas">
+<title>vsefer's page</title>
+<meta name="description" content="Article page">
+<meta name="keywords" content="vsefer, linux, sysadmin, wireless, arch, networks, electronics, valentino sefer">
+<meta name="google-site-verification" content="RI2Rf1Mrtl-1AmmxsORedboLRoESb_xl1evYRtmZ3mk" />
+</%block>
+  <div class="one-third column">
+    <h3>Who Am I?</h3>
+    <p> Freelancer, currently working for <a href="http://www.interglider.com">Interglider</a> company as <strong>system administrator</strong>.<br><br>Mostly interested in <em>Linux, servers, virtualization, networks, networks security, wireless and electronics</em>.<br><br>An active member of the local wireless association "OSW - Osijek Wireless", one of the founders of the project "<a href="http://www.otvorenamreza.org">Otvorena mreža</a>", the user of free software and the Linux operating system ...</p>
+  </div>
+  <div class="one-third column">
+    <h3>Social Networks</h3>
+    <p>You can reach me at:</p>
+      <ul class="square">
+            <li><strong><a href="skype:v.sefer?userinfo" target="_blank">Skype</a></strong> / mostly reachable ...</li>
+        <li><strong><a href="http://plus.google.com/104529050680450095066" target="_blank">Google+</a></strong> / my random stuff ...</li>
+        <li><strong><a href="http://hr.linkedin.com/in/vsefer/" target="_blank">LinkedIN</a></strong> / online CV, work experience, skill list ...</li>
+            <li><strong><a href="http://twitter.com/vsefer/" target="_blank">Twitter</a></strong> / personal tweets ...</li>
+            <li><strong><a href="http://github.com/vsefer/" target="_blank">GitHub</a></strong> / "code" repo ...</li>
+      </ul>
+    </div>
+  <div class="one-third column">
+    <h3>Contact/Hire me</h3>
+    <p>If you have any questions, please don't hesitate to email me at <a href="mailto:valentino.sefer@gmail.com">valentino.sefer@gmail.com</a>.</p>
+    <h3>Remember !</h3>
+      <blockquote>
+        <p>Success consists of going from failure to failure without loss of enthusiasm.</p>
+        <cite><strong>Winston Churchill</strong></cite>
+      </blockquote>
+    </div>
+    <div class="sixteen columns">
+      <hr />
+      <h3>Published Articles</h3>
+        <br>
+          <h4> <a href="http://fabrikator.org/digitemp.html">How to measure ambient temperature with wireless router</a></h4>
+        <br>
+        <p>Measuring of ambient temperature is done with cheap Dallas sensor DS18B20 (~ 1$) over USB 2.0 to UART TTL 6PIN Module Serial Converter CP2102 (~1,50 $) and is showing temperature on simple static html web page hosted on wireless router TP-Link WR703N (~ 25$). </p>
+      <hr />
+      <h3>(Un)Published Articles</h3>
+        <br>
+            <h4><a href="http://fabrikator.org/nginx-php5fpm-wheezy.html">How to setup nginx + php5-fpm on Debian Wheezy</a></h4>
+        <br>
+        <p>In this article I will explain how to setup simple web server with <strong>nginx</strong> + <strong>php5-fpm</strong> on Debian Wheezy.&nbsp;</p>
+        <p>The first part of tutorial will cover basic installation of nginx server and php5-fpm (<em>FastCGI Process Manager</em> - which is an alternative PHP FastCGI implementation). I decided to use the latest mainline version of nginx and php5-fpm package from official debian source.&nbsp;</p>
 
-	<!-- Basic Page Needs
-  ================================================== -->
-	<meta charset="utf-8">
-	<title>vsefer's page</title>
-	<meta name="description" content="personal blog about linux, servers, system administration, wireless">
-	<meta name="keywords" content="vsefer, linux, sysadmin, nginx, openvpn, openwrt, wireless, arch, cyberoam, utm, networks, fortinet">
-	<meta name="author" content="Valentino Sefer">
-	<meta name="google-site-verification" content="RI2Rf1Mrtl-1AmmxsORedboLRoESb_xl1evYRtmZ3mk" />
+        <p>In the second part of this tutorial I will show you how to create simple web page which shows some basic PHP information from our system, and how to "connect" nginx with php5-fpm proccess manager and get all things to work.</p>
+    <hr />
+    </div>  
+    <div class="eight columns">
+        <h3>Left Column</h3>
+        <br>
+          <h4> <a href="http://fabrikator.org/digitemp.html">How to measure ambient temperature with wireless router</a></h4>
+        <br>
+        <div class="videoWrapper" style="margin-bottom: 20px">
+        <iframe width="560" height="315" src="//www.youtube.com/embed/Wpl_6jotaHA" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p>Measuring of ambient temperature is done with cheap Dallas sensor DS18B20 (~ 1$) over USB 2.0 to UART TTL 6PIN Module Serial Converter CP2102 (~1,50 $) and is showing temperature on simple static html web page hosted on wireless router TP-Link WR703N (~ 25$). </p>
+    </div>    
+    <div class="eight columns">
+      <h3>Right Column</h3>
+        <br>
+            <h4><a href="http://fabrikator.org/nginx-php5fpm-wheezy.html">How to setup nginx + php5-fpm on Debian Wheezy</a></h4>
+        <br>
+        <div class="videoWrapper" style="margin-bottom: 20px">
+        <iframe width="560" height="315" src="//www.youtube.com/embed/2vjPBrBU-TM" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p>In this article I will explain how to setup simple web server with <strong>nginx</strong> + <strong>php5-fpm</strong> on Debian Wheezy.&nbsp;</p>
+        <p>The first part of tutorial will cover basic installation of nginx server and php5-fpm (<em>FastCGI Process Manager</em> - which is an alternative PHP FastCGI implementation). I decided to use the latest mainline version of nginx and php5-fpm package from official debian source.&nbsp;</p>
 
-	<!-- Mobile Specific Metas
-  ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <p>In the second part of this tutorial I will show you how to create simple web page which shows some basic PHP information from our system, and how to "connect" nginx with php5-fpm proccess manager and get all things to work.</p>
+    </div>  
 
-	<!-- CSS
-  ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
-
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
-	<!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-
-</head>
-<body>
-
-
-	<!-- Primary Page Layout
-	================================================== -->
-
-	<!-- Delete everything in this .container and get started on your own site! -->
-
-	<div class="container">
-		<div class="sixteen columns">
-		<h1 class="remove-bottom" style="margin-top: 40px"><a href="http://fabrikator.org" style="color: black; ">vsefer@root: # <span class="blink">_</span></a></h1>			<h7>personal blog about linux, servers, system administration, wireless, electronics ...</h7>
-			<hr />
-		</div>
-		<div class="one-third column">
-			<h3>Who Am I?</h3>
-      <p> Freelancer, currently working for <a href="http://www.interglider.com">Interglider</a> company as <strong>system administrator</strong>.<br><br>Mostly interested in <em>Linux, servers, virtualization, networks, networks security, wireless and electronics</em>.<br><br>An active member of the local wireless association "OSW - Osijek Wireless", one of the founders of the project "<a href="http://www.otvorenamreza.org">Otvorena mreža</a>", the user of free software and the Linux operating system ...</p>
-		</div>
-		<div class="one-third column">
-			<h3>Social Networks</h3>
-			<p>You can reach me at:</p>
-			<ul class="square">
-        			<li><strong><a href="skype:v.sefer?userinfo">Skype</a></strong> / mostly reachable ...</li>
-				<li><strong><a href="http://plus.google.com/104529050680450095066">Google+</a></strong> / my random stuff ...</li>
-				<li><strong><a href="http://hr.linkedin.com/in/vsefer/">LinkedIN</a></strong> / online CV, work experience, skill list ...</li>
-        			<li><strong><a href="http://twitter.com/vsefer/">Twitter</a></strong> / personal tweets ...</li>
-        			<li><strong><a href="http://github.com/vsefer/">GitHub</a></strong> / "code" repo ...</li>
-			</ul>
-		</div>
-		<div class="one-third column">
-			<h3>Contact/Hire me</h3>
-      <p>If you have any questions, please don't hesitate to email me at <a href="mailto:valentino.sefer@gmail.com">valentino.sefer@gmail.com</a>.</p>
-			<h3>Remember !</h3>
-			<blockquote>
-				<p>Success consists of going from failure to failure without loss of enthusiasm.</p>
-				<cite><strong>Winston Churchill</strong></cite>
-			</blockquote>
-		</div>
-		<div class="sixteen columns">
-    		<hr />
-			<h3>Published Articles</h3>
-				<br>
-    				<h4> <a href="http://fabrikator.org/digitemp.html">How to measure ambient temperature with wireless router</a></h4>
-				<br>
-				<p>Measuring of ambient temperature is done with cheap Dallas sensor DS18B20 (~ 1$) over USB 2.0 to UART TTL 6PIN Module Serial Converter CP2102 (~1,50 $) and is showing temperature on simple static html web page hosted on wireless router TP-Link WR703N (~ 25$). </p>
-			<hr />
-			<h3>(Un)Published Articles</h3>
-				<br>
-    				<h4><a href="http://fabrikator.org/nginx-php5fpm-wheezy.html">How to setup nginx + php5-fpm on Debian Wheezy</a></h4>
-				<br>
-				<p>In this article I will explain how to setup simple web server with <strong>nginx</strong> + <strong>php5-fpm</strong> on Debian Wheezy.&nbsp;</p>
-				<p>The first part of tutorial will cover basic installation of nginx server and php5-fpm (<em>FastCGI Process Manager</em> - which is an alternative PHP FastCGI implementation). I decided to use the latest mainline version of nginx and php5-fpm package from official debian source.&nbsp;</p>
-
-				<p>In the second part of this tutorial I will show you how to create simple web page which shows some basic PHP information from our system, and how to "connect" nginx with php5-fpm proccess manager and get all things to work.</p>
-			<hr />			
-		<footer class="sixteen columns">
-		<p>2014 | Built on <a href="http://getskeleton.com/">Skeleton</a> framework</p>
-		</footer>
-		</div>
-	</div><!-- container -->
-
-
-<!-- End Document
-================================================== -->
-<a href="#" class="scrollToTop">Top</a>
-</body>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="js/jquery-blink.js" language="javascript" type="text/javascript"></script>
-
-<script type="text/javascript" language="javascript">
-$(document).ready(function()
-{
-	$('.blink').blink();
-});
-</script>
-
-<script type="text/javascript" language="javascript">
-$(document).ready(function(){
-	
-	//Check to see if the window is top if not then display button
-	$(window).scroll(function(){
-		if ($(this).scrollTop() > 100) {
-			$('.scrollToTop').fadeIn();
-		} else {
-			$('.scrollToTop').fadeOut();
-		}
-	});
-	
-	//Click event to scroll to top
-	$('.scrollToTop').click(function(){
-		$('html, body').animate({scrollTop : 0},800);
-		return false;
-	});
-	
-});
-</script>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-53726523-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-</html>
